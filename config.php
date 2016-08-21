@@ -4,28 +4,28 @@
 * the tables are created and the correct
 * columns are made
 */
-$database = "drl_paste";
+$database = "database";
 
 /*
 * Add the database user here for the 
 * the database specified above
 */
-$user = "drl_paster";
+$user = "user";
 
 /*
 * Add the password here for the user
 * specified above
 */
-$password = "pastepass";
+$password = "password";
 
 /*
 * Add the host for where the database
 * is hosted
 */
-$host = "localhost";
+$host = "host";
 
 /*
 * Configure the URL that will be used
 * for the script
 */
-$url = "http://drl.dev";
+$url = "http://example.com";
