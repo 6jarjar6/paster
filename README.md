@@ -1,2 +1,2 @@
-# paster
-A Pastebin clone with random short urls
+# AltPaste
+A Pastebin clone without ip tracking
