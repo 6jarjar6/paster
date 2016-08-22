@@ -14,7 +14,7 @@ date_default_timezone_set('America/Mexico_City');
 
 <head>
     <link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
-   <title>DRLpaste</title>
+   <title>AltPaste</title>
 
    <style>
         a {
@@ -103,18 +103,17 @@ date_default_timezone_set('America/Mexico_City');
 <body>
 <?php 
 	require_once($_SERVER['DOCUMENT_ROOT'] . '/config.php');
-	echo "<header><a href='" . $url . "'>DRLpaste</a></header>"; 
+	echo "<header><a href='" . $url . "'>AltPaste</a></header>"; 
 ?>
     <div class="mid content">
         <form action="assets/paste.php" method="POST">
             <textarea rows="25" cols="50" class="pastebox" name="pastetext" placeholder="Insert text here...."></textarea>
             <br>
-             <span class="namefieldspan"><a class="submittext">Submitted By</a> |&nbsp; 
+             <span class="namefieldspan"><a class="submittext">Submitter</a> |&nbsp; 
             <input type="textfield" class="namefield" name="submittext" placeholder="Your Name"></span>
             <br>
             <!--Make Public: <input type="checkbox" name="public" class="publiccheck" value="1">-->
             <br>
-            <input type=hidden name="ip" value="<?php print $_SERVER['REMOTE_ADDR']; ?>">
             <input type=hidden name="randomkey" value="<?php print generateRandomString(9); ?>">
             <input type=hidden name="timestamp" value="<?php print date("m.d.Y h:i:sa"); ?>" />
             <input type="submit" class="submitbutton" value="Paste!" name="submit">
